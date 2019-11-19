@@ -34,11 +34,10 @@ const createMenu = () => {
     >STATISTICS</label
   >
 </section>`
-  )
+  );
 };
 
 const createSearchForm = () => {
-
   return (
     `<section class="main__filter filter container">
     <input
@@ -108,55 +107,42 @@ const createSearchForm = () => {
       >Archive <span class="filter__archive-count">115</span></label
     >
   </section>`
-  )
-
+  );
 };
 
 const createFiltersList = () => {
-
   return (
     `<div class="board__filter-list">
     <a href="#" class="board__filter">SORT BY DEFAULT</a>
     <a href="#" class="board__filter">SORT BY DATE up</a>
     <a href="#" class="board__filter">SORT BY DATE down</a>
   </div>`
-
-  )
-
-}
+  );
+};
 
 const createContent = () => {
-
   return (
     `<section class="board container"></section>`
-
-  )
-
-}
+  );
+};
 
 const createFilterList = () => {
-
   return (
     `<div class="board__filter-list">
     <a href="#" class="board__filter">SORT BY DEFAULT</a>
     <a href="#" class="board__filter">SORT BY DATE up</a>
     <a href="#" class="board__filter">SORT BY DATE down</a>
   </div>`
-
-  )
-
-}
+  );
+};
 
 
 
 const createBoardTasks = () => {
-
   return (
     `<div class="board__tasks"></div>`
-
-  )
-
-}
+  );
+};
 
 const createCard = () => {
   return (
@@ -225,19 +211,18 @@ const createCard = () => {
       </div>
     </div>
   </article>`
-  )
-}
+  );
+};
 
 const createButton = () => {
   return (
     `<butto class="load-more" type="button">load more</butto>`
-  )
-}
+  );
+};
 
 const mainControl = document.querySelector('.main__control');
 const mainSection = document.querySelector('.main');
 const filterList = document.querySelector('.board__filter-list');
-
 
 renderElement(mainControl, createMenu(), 'beforeend');
 renderElement(mainSection, createSearchForm(), 'beforeend');
@@ -246,14 +231,12 @@ renderElement(mainSection, createContent(), 'beforeend');
 const board = document.querySelector('.board');
 
 renderElement(board, createFilterList(), 'beforeend');
-
 renderElement(board, createBoardTasks(), 'beforeend');
 
 const boardTasks = document.querySelector('.board__tasks');
 
 for (let i = 0; i < CARDS_QTY; i++) {
   renderElement(boardTasks, createCard(), 'beforeend');
-
-}
+};
 
 renderElement(board, createButton(), 'beforeend');
