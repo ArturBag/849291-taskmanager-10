@@ -112,11 +112,8 @@ const createSearchForm = () => {
   );
 };
 
-const createContent = () => {
-  return (
-    `<section class="board container"></section>`
-  );
-};
+const createContent = () => `<section class="board container"></section>`;
+
 
 const createFilterList = () => {
   return (
@@ -128,11 +125,8 @@ const createFilterList = () => {
   );
 };
 
-const createBoardTasks = () => {
-  return (
-    `<div class="board__tasks"></div>`
-  );
-};
+const createBoardTasks = () => `<div class="board__tasks"></div>`;
+
 
 const createCard = () => {
   return (
@@ -204,11 +198,7 @@ const createCard = () => {
   );
 };
 
-const createButton = () => {
-  return (
-    `<butto class="load-more" type="button">load more</butto>`
-  );
-};
+const createButton = () => `<button class="load-more" type="button">load more</button>`;
 
 const mainControl = document.querySelector(`.main__control`);
 const mainSection = document.querySelector(`.main`);
