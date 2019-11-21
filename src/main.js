@@ -6,9 +6,8 @@ const renderElement = (container, template, place) => {
 
 const CARDS_QTY = 3;
 
-const createMenu = () => {
-  return (
-    `<section class="control__btn-wrap">
+const createMenu = () =>
+  `<section class="control__btn-wrap">
   <input
     type="radio"
     name="control"
@@ -35,13 +34,10 @@ const createMenu = () => {
   <label for="control__statistic" class="control__label"
     >STATISTICS</label
   >
-</section>`
-  );
-};
+</section>`;
 
-const createSearchForm = () => {
-  return (
-    `<section class="main__filter filter container">
+const createSearchForm = () =>
+  `<section class="main__filter filter container">
     <input
       type="radio"
       id="filter__all"
@@ -108,29 +104,23 @@ const createSearchForm = () => {
     <label for="filter__archive" class="filter__label"
       >Archive <span class="filter__archive-count">115</span></label
     >
-  </section>`
-  );
-};
+  </section>`;
 
 const createContent = () => `<section class="board container"></section>`;
 
 
-const createFilterList = () => {
-  return (
-    `<div class="board__filter-list">
+const createFilterList = () =>
+  `<div class="board__filter-list">
     <a href="#" class="board__filter">SORT BY DEFAULT</a>
     <a href="#" class="board__filter">SORT BY DATE up</a>
     <a href="#" class="board__filter">SORT BY DATE down</a>
-  </div>`
-  );
-};
+  </div>`;
 
 const createBoardTasks = () => `<div class="board__tasks"></div>`;
 
 
-const createCard = () => {
-  return (
-    `<article class="card card--black">
+const createCard = () =>
+  `<article class="card card--black">
     <div class="card__form">
       <div class="card__inner">
         <div class="card__control">
@@ -194,9 +184,7 @@ const createCard = () => {
         </div>
       </div>
     </div>
-  </article>`
-  );
-};
+  </article>`;
 
 const createButton = () => `<button class="load-more" type="button">load more</button>`;
 
