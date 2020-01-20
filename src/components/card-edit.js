@@ -237,7 +237,6 @@ export default class TaskEdit extends AbstractSmartComponent {
       this._flatpickr.destroy();
       this._flatpickr = null;
     }
-    // console.log(this._task.dueDate)
 
     if (this._isDateShowing) {
       const dateElement = this.getElement().querySelector(`.card__date`);
